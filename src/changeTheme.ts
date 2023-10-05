@@ -9,6 +9,14 @@ export function changeTheme(element: HTMLButtonElement) {
       classList?.remove("theme-dark")
       classList?.add("theme-light")
     }
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      event: 'ChangeTheme',
+      eventDescription: {
+        event_type: "click",
+        event_page: "home",
+      }
+    })
   }
   element.addEventListener('click', () => setThemes())
 }
