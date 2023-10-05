@@ -98,9 +98,11 @@ button:focus-visible {
 
 .theme-light {
   background: #ffffff;
+  color: #1a1a1a;
 }
 
 .theme-dark {
   background: #1a1a1a;
+  color: #ffffff
 }
 
